@@ -1,0 +1,220 @@
+index,Table,Row,Description,Special,dtype,unique_count,nan_percent,auc
+1,application_train.csv,SK_ID_CURR,ID of loan in our sample,,int64,307511.0,0.0,0.4981789155973122
+2,application_train.csv,TARGET,"Target variable (1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample, 0 - all other cases)",,int64,2.0,0.0,
+5,application_train.csv,NAME_CONTRACT_TYPE,Identification if loan is cash or revolving,,object,2.0,0.0,
+6,application_train.csv,CODE_GENDER,Gender of the client,,object,3.0,0.0,
+7,application_train.csv,FLAG_OWN_CAR,Flag if the client owns a car,,object,2.0,0.0,
+8,application_train.csv,FLAG_OWN_REALTY,Flag if client owns a house or flat,,object,2.0,0.0,
+9,application_train.csv,CNT_CHILDREN,Number of children the client has,,int64,15.0,0.0,0.5018707335748476
+10,application_train.csv,AMT_INCOME_TOTAL,Income of the client,,float64,2548.0,0.0,0.5164165279438256
+11,application_train.csv,AMT_CREDIT,Credit amount of the loan,,float64,5603.0,0.0,0.586195
+12,application_train.csv,AMT_ANNUITY,Loan annuity,,float64,13673.0,0.0039022994299390923,0.5673819999999999
+13,application_train.csv,AMT_GOODS_PRICE,For consumer loans it is the price of the goods for which the loan is given,,float64,1003.0,0.09040327012692227,0.586175
+14,application_train.csv,NAME_TYPE_SUITE,Who was accompanying client when he was applying for the loan,,object,8.0,0.4201475719567756,
+15,application_train.csv,NAME_INCOME_TYPE,"Clients income type (businessman, working, maternity leave,�)",,object,8.0,0.0,
+16,application_train.csv,NAME_EDUCATION_TYPE,Level of highest education the client achieved,,object,5.0,0.0,
+17,application_train.csv,NAME_FAMILY_STATUS,Family status of the client,,object,6.0,0.0,
+18,application_train.csv,NAME_HOUSING_TYPE,"What is the housing situation of the client (renting, living with parents, ...)",,object,6.0,0.0,
+19,application_train.csv,REGION_POPULATION_RELATIVE,Normalized population of region where client lives (higher number means the client lives in more populated region),normalized,float64,81.0,0.0,0.5652119999999999
+20,application_train.csv,DAYS_BIRTH,Client's age in days at the time of application,time only relative to the application,int64,17460.0,0.0,0.5798800000000001
+21,application_train.csv,DAYS_EMPLOYED,How many days before the application the person started current employment,time only relative to the application,int64,12574.0,0.0,0.53014
+22,application_train.csv,DAYS_REGISTRATION,How many days before the application did client change his registration,time only relative to the application,float64,15688.0,0.0,0.5394220000000001
+23,application_train.csv,DAYS_ID_PUBLISH,How many days before the application did client change the identity document with which he applied for the loan,time only relative to the application,int64,6168.0,0.0,0.551054
+24,application_train.csv,OWN_CAR_AGE,Age of client's car,,float64,63.0,65.9908100848425,0.516745
+25,application_train.csv,FLAG_MOBIL,"Did client provide mobile phone (1=YES, 0=NO)",,int64,2.0,0.0,0.4999
+26,application_train.csv,FLAG_EMP_PHONE,"Did client provide work phone (1=YES, 0=NO)",,int64,2.0,0.0,0.530127
+27,application_train.csv,FLAG_WORK_PHONE,"Did client provide home phone (1=YES, 0=NO)",,int64,2.0,0.0,0.5193909999999999
+28,application_train.csv,FLAG_CONT_MOBILE,"Was mobile phone reachable (1=YES, 0=NO)",,int64,2.0,0.0,0.5
+29,application_train.csv,FLAG_PHONE,"Did client provide home phone (1=YES, 0=NO)",,int64,2.0,0.0,0.518191
+30,application_train.csv,FLAG_EMAIL,"Did client provide email (1=YES, 0=NO)",,int64,2.0,0.0,0.5
+31,application_train.csv,OCCUPATION_TYPE,What kind of occupation does the client have,,object,19.0,31.345545362604923,
+32,application_train.csv,CNT_FAM_MEMBERS,How many family members does client have,,float64,18.0,0.0006503832383231819,0.503023
+33,application_train.csv,REGION_RATING_CLIENT,"Our rating of the region where client lives (1,2,3)",,int64,3.0,0.0,0.546097
+34,application_train.csv,REGION_RATING_CLIENT_W_CITY,"Our rating of the region where client lives with taking city into account (1,2,3)",,int64,3.0,0.0,0.547183
+35,application_train.csv,WEEKDAY_APPR_PROCESS_START,On which day of the week did the client apply for the loan,,object,7.0,0.0,
+36,application_train.csv,HOUR_APPR_PROCESS_START,Approximately at what hour did the client apply for the loan,rounded,int64,24.0,0.0,0.510305
+37,application_train.csv,REG_REGION_NOT_LIVE_REGION,"Flag if client's permanent address does not match contact address (1=different, 0=same, at region level)",,int64,2.0,0.0,0.498414
+38,application_train.csv,REG_REGION_NOT_WORK_REGION,"Flag if client's permanent address does not match work address (1=different, 0=same, at region level)",,int64,2.0,0.0,0.499676
+39,application_train.csv,LIVE_REGION_NOT_WORK_REGION,"Flag if client's contact address does not match work address (1=different, 0=same, at region level)",,int64,2.0,0.0,0.49753400000000003
+40,application_train.csv,REG_CITY_NOT_LIVE_CITY,"Flag if client's permanent address does not match contact address (1=different, 0=same, at city level)",,int64,2.0,0.0,0.519323
+41,application_train.csv,REG_CITY_NOT_WORK_CITY,"Flag if client's permanent address does not match work address (1=different, 0=same, at city level)",,int64,2.0,0.0,0.53667
+42,application_train.csv,LIVE_CITY_NOT_WORK_CITY,"Flag if client's contact address does not match work address (1=different, 0=same, at city level)",,int64,2.0,0.0,0.520439
+43,application_train.csv,ORGANIZATION_TYPE,Type of organization where client works,,object,58.0,0.0,
+44,application_train.csv,EXT_SOURCE_1,Normalized score from external data source,normalized,float64,114585.0,56.38107254699833,0.589739
+45,application_train.csv,EXT_SOURCE_2,Normalized score from external data source,normalized,float64,119832.0,0.21462646864665005,0.6543329999999999
+46,application_train.csv,EXT_SOURCE_3,Normalized score from external data source,normalized,float64,815.0,19.825307062186393,0.657033
+47,application_train.csv,APARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,2340.0,50.749729277977046,0.542212
+48,application_train.csv,BASEMENTAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3781.0,58.51595552679416,0.50076
+49,application_train.csv,YEARS_BEGINEXPLUATATION_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,286.0,48.781019215572776,0.541137
+50,application_train.csv,YEARS_BUILD_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,150.0,66.49778381911543,0.52294
+51,application_train.csv,COMMONAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3182.0,69.87229725115525,0.499882
+52,application_train.csv,ELEVATORS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,258.0,53.295979656012314,0.5063340000000001
+53,application_train.csv,ENTRANCES_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,286.0,50.348768011550796,0.518335
+54,application_train.csv,FLOORSMAX_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,404.0,49.76082156410664,0.524839
+55,application_train.csv,FLOORSMIN_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,306.0,67.84862980511268,0.503929
+56,application_train.csv,LANDAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3528.0,59.3767377427149,0.5024930000000001
+57,application_train.csv,LIVINGAPARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,1869.0,68.35495315614726,0.509896
+58,application_train.csv,LIVINGAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,5200.0,50.19332641759157,0.543984
+59,application_train.csv,NONLIVINGAPARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,387.0,69.43296337366793,0.505386
+60,application_train.csv,NONLIVINGAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3291.0,55.17916432257707,0.508146
+61,application_train.csv,APARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,761.0,50.749729277977046,0.532737
+62,application_train.csv,BASEMENTAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3842.0,58.51595552679416,0.49759
+63,application_train.csv,YEARS_BEGINEXPLUATATION_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,222.0,48.781019215572776,0.5403140000000001
+64,application_train.csv,YEARS_BUILD_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,155.0,66.49778381911543,0.518126
+65,application_train.csv,COMMONAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3129.0,69.87229725115525,0.50031
+66,application_train.csv,ELEVATORS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,27.0,53.295979656012314,0.5180779999999999
+67,application_train.csv,ENTRANCES_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,31.0,50.348768011550796,0.50825
+68,application_train.csv,FLOORSMAX_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,26.0,49.76082156410664,0.508959
+69,application_train.csv,FLOORSMIN_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,26.0,67.84862980511268,0.514573
+70,application_train.csv,LANDAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3564.0,59.3767377427149,0.503321
+71,application_train.csv,LIVINGAPARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,737.0,68.35495315614726,0.5137470000000001
+72,application_train.csv,LIVINGAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,5302.0,50.19332641759157,0.5415
+73,application_train.csv,NONLIVINGAPARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,168.0,69.43296337366793,0.504067
+74,application_train.csv,NONLIVINGAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3328.0,55.17916432257707,0.510369
+75,application_train.csv,APARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,1149.0,50.749729277977046,0.5420050000000001
+76,application_train.csv,BASEMENTAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3773.0,58.51595552679416,0.500737
+77,application_train.csv,YEARS_BEGINEXPLUATATION_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,246.0,48.781019215572776,0.5295770000000001
+78,application_train.csv,YEARS_BUILD_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,152.0,66.49778381911543,0.521162
+79,application_train.csv,COMMONAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3203.0,69.87229725115525,0.500011
+80,application_train.csv,ELEVATORS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,47.0,53.295979656012314,0.506737
+81,application_train.csv,ENTRANCES_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,47.0,50.348768011550796,0.516842
+82,application_train.csv,FLOORSMAX_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,50.0,49.76082156410664,0.54584
+83,application_train.csv,FLOORSMIN_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,48.0,67.84862980511268,0.503841
+84,application_train.csv,LANDAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3561.0,59.3767377427149,0.502733
+85,application_train.csv,LIVINGAPARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,1098.0,68.35495315614726,0.5125310000000001
+86,application_train.csv,LIVINGAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,5282.0,50.19332641759157,0.5418850000000001
+87,application_train.csv,NONLIVINGAPARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,215.0,69.43296337366793,0.506452
+88,application_train.csv,NONLIVINGAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,3324.0,55.17916432257707,0.509443
+89,application_train.csv,FONDKAPREMONT_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,object,5.0,68.38617155158677,
+90,application_train.csv,HOUSETYPE_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,object,4.0,50.176091261776,
+91,application_train.csv,TOTALAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,float64,5117.0,48.26851722377411,0.545235
+92,application_train.csv,WALLSMATERIAL_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,object,8.0,50.8407829313423,
+93,application_train.csv,EMERGENCYSTATE_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",normalized,object,3.0,47.39830445089768,
+94,application_train.csv,OBS_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 30 DPD (days past due) default,,float64,34.0,0.3320206431639844,0.499032
+95,application_train.csv,DEF_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 30 DPD (days past due),,float64,11.0,0.3320206431639844,0.50865
+96,application_train.csv,OBS_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 60 DPD (days past due) default,,float64,34.0,0.3320206431639844,0.500745
+97,application_train.csv,DEF_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 60 (days past due) DPD,,float64,10.0,0.3320206431639844,0.5139050000000001
+98,application_train.csv,DAYS_LAST_PHONE_CHANGE,How many days before application did client change phone,,float64,3774.0,0.00032519161916159093,0.510959
+99,application_train.csv,FLAG_DOCUMENT_2,Did client provide document 2,,int64,2.0,0.0,0.4999
+100,application_train.csv,FLAG_DOCUMENT_3,Did client provide document 3,,int64,2.0,0.0,0.534361
+101,application_train.csv,FLAG_DOCUMENT_4,Did client provide document 4,,int64,2.0,0.0,0.4999
+102,application_train.csv,FLAG_DOCUMENT_5,Did client provide document 5,,int64,2.0,0.0,0.5
+103,application_train.csv,FLAG_DOCUMENT_6,Did client provide document 6,,int64,2.0,0.0,0.512235
+104,application_train.csv,FLAG_DOCUMENT_7,Did client provide document 7,,int64,2.0,0.0,0.5
+105,application_train.csv,FLAG_DOCUMENT_8,Did client provide document 8,,int64,2.0,0.0,0.49991
+106,application_train.csv,FLAG_DOCUMENT_9,Did client provide document 9,,int64,2.0,0.0,0.497708
+107,application_train.csv,FLAG_DOCUMENT_10,Did client provide document 10,,int64,2.0,0.0,0.4999
+108,application_train.csv,FLAG_DOCUMENT_11,Did client provide document 11,,int64,2.0,0.0,0.49748000000000003
+109,application_train.csv,FLAG_DOCUMENT_12,Did client provide document 12,,int64,2.0,0.0,0.4999
+110,application_train.csv,FLAG_DOCUMENT_13,Did client provide document 13,,int64,2.0,0.0,0.49813900000000005
+111,application_train.csv,FLAG_DOCUMENT_14,Did client provide document 14,,int64,2.0,0.0,0.497895
+112,application_train.csv,FLAG_DOCUMENT_15,Did client provide document 15,,int64,2.0,0.0,0.49736800000000003
+113,application_train.csv,FLAG_DOCUMENT_16,Did client provide document 16,,int64,2.0,0.0,0.498787
+114,application_train.csv,FLAG_DOCUMENT_17,Did client provide document 17,,int64,2.0,0.0,0.5
+115,application_train.csv,FLAG_DOCUMENT_18,Did client provide document 18,,int64,2.0,0.0,0.498418
+116,application_train.csv,FLAG_DOCUMENT_19,Did client provide document 19,,int64,2.0,0.0,0.5
+117,application_train.csv,FLAG_DOCUMENT_20,Did client provide document 20,,int64,2.0,0.0,0.5
+118,application_train.csv,FLAG_DOCUMENT_21,Did client provide document 21,,int64,2.0,0.0,0.5
+119,application_train.csv,AMT_REQ_CREDIT_BUREAU_HOUR,Number of enquiries to Credit Bureau about the client one hour before application,,float64,6.0,13.501630835970097,0.50266
+120,application_train.csv,AMT_REQ_CREDIT_BUREAU_DAY,Number of enquiries to Credit Bureau about the client one day before application (excluding one hour before application),,float64,10.0,13.501630835970097,0.50843
+121,application_train.csv,AMT_REQ_CREDIT_BUREAU_WEEK,Number of enquiries to Credit Bureau about the client one week before application (excluding one day before application),,float64,10.0,13.501630835970097,0.503641
+122,application_train.csv,AMT_REQ_CREDIT_BUREAU_MON,Number of enquiries to Credit Bureau about the client one month before application (excluding one week before application),,float64,25.0,13.501630835970097,0.503667
+123,application_train.csv,AMT_REQ_CREDIT_BUREAU_QRT,Number of enquiries to Credit Bureau about the client 3 month before application (excluding one month before application),,float64,12.0,13.501630835970097,0.5174890000000001
+124,application_train.csv,AMT_REQ_CREDIT_BUREAU_YEAR,Number of enquiries to Credit Bureau about the client one day year (excluding last 3 months before application),,float64,26.0,13.501630835970097,0.50931
+125,bureau.csv,SK_ID_CURR,"ID of loan in our sample - one loan in our sample can have 0,1,2 or more related previous credits in credit bureau",hashed,int64,305811.0,0.0,0.521051
+126,bureau.csv,SK_ID_BUREAU,Recoded ID of previous Credit Bureau credit related to our loan (unique coding for each loan application),hashed,int64,1716428.0,0.0,0.517655
+127,bureau.csv,CREDIT_ACTIVE,Status of the Credit Bureau (CB) reported credits,,object,4.0,0.0,
+128,bureau.csv,CREDIT_CURRENCY,Recoded currency of the Credit Bureau credit,recoded,object,4.0,0.0,
+129,bureau.csv,DAYS_CREDIT,How many days before current application did client apply for Credit Bureau credit,time only relative to the application,int64,2923.0,0.0,0.556185
+130,bureau.csv,CREDIT_DAY_OVERDUE,Number of days past due on CB credit at the time of application for related loan in our sample,,int64,942.0,0.0,0.49874399999999997
+131,bureau.csv,DAYS_CREDIT_ENDDATE,Remaining duration of CB credit (in days) at the time of application in Home Credit,time only relative to the application,float64,14097.0,6.149573416420612,0.524512
+132,bureau.csv,DAYS_ENDDATE_FACT,Days since CB credit ended at the time of application in Home Credit (only for closed credit),time only relative to the application,float64,2918.0,36.916957775100386,0.556901
+133,bureau.csv,AMT_CREDIT_MAX_OVERDUE,Maximal amount overdue on the Credit Bureau credit so far (at application date of loan in our sample),,float64,68252.0,65.51326359159837,0.502085
+134,bureau.csv,CNT_CREDIT_PROLONG,How many times was the Credit Bureau credit prolonged,,int64,10.0,0.0,0.503239
+135,bureau.csv,AMT_CREDIT_SUM,Current credit amount for the Credit Bureau credit,,float64,236709.0,0.0007573868522303295,0.505163
+136,bureau.csv,AMT_CREDIT_SUM_DEBT,Current debt on Credit Bureau credit,,float64,226538.0,15.011931755948982,0.518425
+137,bureau.csv,AMT_CREDIT_SUM_LIMIT,Current credit limit of credit card reported in Credit Bureau,,float64,51727.0,34.477414724066485,0.506583
+138,bureau.csv,AMT_CREDIT_SUM_OVERDUE,Current amount overdue on Credit Bureau credit,,float64,1616.0,0.0,0.501946
+139,bureau.csv,CREDIT_TYPE,"Type of Credit Bureau credit (Car, cash,...)",,object,15.0,0.0,
+140,bureau.csv,DAYS_CREDIT_UPDATE,How many days before loan application did last information about the Credit Bureau credit come,time only relative to the application,int64,2982.0,0.0,0.5406979999999999
+141,bureau.csv,AMT_ANNUITY,Annuity of the Credit Bureau credit,,float64,40322.0,71.47349029496141,0.501981
+142,bureau_balance.csv,SK_ID_BUREAU,Recoded ID of Credit Bureau credit (unique coding for each application) - use this to join to CREDIT_BUREAU table,hashed,int64,817395.0,0.0,0.4982869337037805
+143,bureau_balance.csv,MONTHS_BALANCE,Month of balance relative to application date (-1 means the freshest balance date),time only relative to the application,int64,97.0,0.0,0.5016966502583236
+144,bureau_balance.csv,STATUS,"Status of Credit Bureau loan during the month (active, closed, DPD0-30,� [C means closed, X means status unknown, 0 means no DPD, 1 means maximal did during month between 1-30, 2 means DPD 31-60,� 5 means DPD 120+ or sold or written off ] )",,object,8.0,0.0,
+145,POS_CASH_balance.csv,SK_ID_PREV,"ID of previous credit in Home Credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loans in Home Credit)",,int64,936325.0,0.0,0.502201
+146,POS_CASH_balance.csv,SK_ID_CURR,ID of loan in our sample,,int64,337252.0,0.0,0.499158
+147,POS_CASH_balance.csv,MONTHS_BALANCE,"Month of balance relative to application date (-1 means the information to the freshest monthly snapshot, 0 means the information at application - often it will be the same as -1 as many banks are not updating the information to Credit Bureau regularly )",time only relative to the application,int64,96.0,0.0,0.527924
+148,POS_CASH_balance.csv,CNT_INSTALMENT,Term of previous credit (can change over time),,float64,74.0,0.26067460038926715,0.520161
+149,POS_CASH_balance.csv,CNT_INSTALMENT_FUTURE,Installments left to pay on the previous credit,,float64,80.0,0.2608345786642174,0.504664
+150,POS_CASH_balance.csv,NAME_CONTRACT_STATUS,Contract status during the month,,object,9.0,0.0,
+151,POS_CASH_balance.csv,SK_DPD,DPD (days past due) during the month of previous credit,,int64,3400.0,0.0,0.501894
+152,POS_CASH_balance.csv,SK_DPD_DEF,DPD during the month with tolerance (debts with low loan amounts are ignored) of the previous credit,,int64,2307.0,0.0,0.5004149999999999
+153,credit_card_balance.csv,SK_ID_PREV,"ID of previous credit in Home credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loans in Home Credit)",hashed,int64,104307.0,0.0,0.5023850000000001
+154,credit_card_balance.csv,SK_ID_CURR,ID of loan in our sample,hashed,int64,103558.0,0.0,0.505043
+155,credit_card_balance.csv,MONTHS_BALANCE,Month of balance relative to application date (-1 means the freshest balance date),time only relative to the application,int64,96.0,0.0,0.5081899999999999
+156,credit_card_balance.csv,AMT_BALANCE,Balance during the month of previous credit,,float64,1347904.0,0.0,0.510051
+157,credit_card_balance.csv,AMT_CREDIT_LIMIT_ACTUAL,Credit card limit during the month of the previous credit,,int64,181.0,0.0,0.499352
+158,credit_card_balance.csv,AMT_DRAWINGS_ATM_CURRENT,Amount drawing at ATM during the month of the previous credit,,float64,2268.0,19.52487193748841,0.506245
+159,credit_card_balance.csv,AMT_DRAWINGS_CURRENT,Amount drawing during the month of the previous credit,,float64,187005.0,0.0,0.506155
+160,credit_card_balance.csv,AMT_DRAWINGS_OTHER_CURRENT,Amount of other drawings during the month of the previous credit,,float64,1833.0,19.52487193748841,0.497935
+161,credit_card_balance.csv,AMT_DRAWINGS_POS_CURRENT,Amount drawing or buying goods during the month of the previous credit,,float64,168749.0,19.52487193748841,0.5057149999999999
+162,credit_card_balance.csv,AMT_INST_MIN_REGULARITY,Minimal installment for this month of the previous credit,,float64,312267.0,7.948208374736217,0.50805
+163,credit_card_balance.csv,AMT_PAYMENT_CURRENT,How much did the client pay during the month on the previous credit,,float64,163210.0,19.998062657409086,0.5055069999999999
+164,credit_card_balance.csv,AMT_PAYMENT_TOTAL_CURRENT,How much did the client pay during the month in total on the previous credit,,float64,182957.0,0.0,0.49795900000000004
+165,credit_card_balance.csv,AMT_RECEIVABLE_PRINCIPAL,Amount receivable for principal on the previous credit,,float64,1195839.0,0.0,0.508722
+166,credit_card_balance.csv,AMT_RECIVABLE,Amount receivable on the previous credit,,float64,1338878.0,0.0,0.511545
+167,credit_card_balance.csv,AMT_TOTAL_RECEIVABLE,Total amount receivable on the previous credit,,float64,1339008.0,0.0,0.5099130000000001
+168,credit_card_balance.csv,CNT_DRAWINGS_ATM_CURRENT,Number of drawings at ATM during this month on the previous credit,,float64,45.0,19.52487193748841,0.5056039999999999
+169,credit_card_balance.csv,CNT_DRAWINGS_CURRENT,Number of drawings during this month on the previous credit,,int64,129.0,0.0,0.50537
+170,credit_card_balance.csv,CNT_DRAWINGS_OTHER_CURRENT,Number of other drawings during this month on the previous credit,,float64,12.0,19.52487193748841,0.50315
+171,credit_card_balance.csv,CNT_DRAWINGS_POS_CURRENT,Number of drawings for goods during this month on the previous credit,,float64,134.0,19.52487193748841,0.5032300000000001
+172,credit_card_balance.csv,CNT_INSTALMENT_MATURE_CUM,Number of paid installments on the previous credit,,float64,122.0,7.948208374736217,0.498148
+173,credit_card_balance.csv,NAME_CONTRACT_STATUS,"Contract status (active signed,...) on the previous credit",,object,7.0,0.0,
+174,credit_card_balance.csv,SK_DPD,DPD (Days past due) during the month on the previous credit,,int64,917.0,0.0,0.5005930000000001
+175,credit_card_balance.csv,SK_DPD_DEF,DPD (Days past due) during the month with tolerance (debts with low loan amounts are ignored) of the previous credit,,int64,378.0,0.0,0.5006430000000001
+176,previous_application.csv,SK_ID_PREV,"ID of previous credit in Home credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loan applications in Home Credit, previous application could, but not necessarily have to lead to credit)",hashed,int64,1670214.0,0.0,0.5030410016774847
+177,previous_application.csv,SK_ID_CURR,ID of loan in our sample,hashed,int64,338857.0,0.0,0.501143741814558
+178,previous_application.csv,NAME_CONTRACT_TYPE,"Contract product type (Cash loan, consumer loan [POS] ,...) of the previous application",,object,4.0,0.0,
+179,previous_application.csv,AMT_ANNUITY,Annuity of previous application,,float64,357960.0,22.286665062081862,0.5027437239425545
+180,previous_application.csv,AMT_APPLICATION,For how much credit did client ask on the previous application,,float64,93885.0,0.0,0.5000282956050168
+181,previous_application.csv,AMT_CREDIT,"Final credit amount on the previous application. This differs from AMT_APPLICATION in a way that the AMT_APPLICATION is the amount for which the client initially applied for, but during our approval process he could have received different amount - AMT_CREDIT",,float64,86804.0,5.987256722791211e-05,0.5041151048075369
+182,previous_application.csv,AMT_DOWN_PAYMENT,Down payment on the previous application,,float64,29279.0,53.6364801157217,0.5157433086557331
+183,previous_application.csv,AMT_GOODS_PRICE,Goods price of good that client asked for (if applicable) on the previous application,,float64,93886.0,23.081772754868545,0.4972352372666981
+184,previous_application.csv,WEEKDAY_APPR_PROCESS_START,On which day of the week did the client apply for previous application,,object,7.0,0.0,
+185,previous_application.csv,HOUR_APPR_PROCESS_START,Approximately at what day hour did the client apply for the previous application,rounded,int64,24.0,0.0,0.5059508194015032
+186,previous_application.csv,FLAG_LAST_APPL_PER_CONTRACT,Flag if it was last application for the previous contract. Sometimes by mistake of client or our clerk there could be more applications for one single contract,,object,2.0,0.0,
+187,previous_application.csv,NFLAG_LAST_APPL_IN_DAY,Flag if the application was the last application per day of the client. Sometimes clients apply for more applications a day. Rarely it could also be error in our system that one application is in the database twice,,int64,2.0,0.0,0.4974700661576907
+188,previous_application.csv,NFLAG_MICRO_CASH,Flag Micro finance loan,,,,,
+189,previous_application.csv,RATE_DOWN_PAYMENT,Down payment rate normalized on previous credit,normalized,float64,207034.0,53.6364801157217,0.5118060613465281
+190,previous_application.csv,RATE_INTEREST_PRIMARY,Interest rate normalized on previous credit,normalized,float64,149.0,99.6436983524267,0.5
+191,previous_application.csv,RATE_INTEREST_PRIVILEGED,Interest rate normalized on previous credit,normalized,float64,26.0,99.6436983524267,0.4992974555643564
+192,previous_application.csv,NAME_CASH_LOAN_PURPOSE,Purpose of the cash loan,,object,25.0,0.0,
+193,previous_application.csv,NAME_CONTRACT_STATUS,"Contract status (approved, cancelled, ...) of previous application",,object,4.0,0.0,
+194,previous_application.csv,DAYS_DECISION,Relative to current application when was the decision about previous application made,time only relative to the application,int64,2922.0,0.0,0.5337197366773616
+195,previous_application.csv,NAME_PAYMENT_TYPE,Payment method that client chose to pay for the previous application,,object,4.0,0.0,
+196,previous_application.csv,CODE_REJECT_REASON,Why was the previous application rejected,,object,9.0,0.0,
+197,previous_application.csv,NAME_TYPE_SUITE,Who accompanied client when applying for the previous application,,object,8.0,49.11975351661524,
+198,previous_application.csv,NAME_CLIENT_TYPE,Was the client old or new client when applying for the previous application,,object,4.0,0.0,
+199,previous_application.csv,NAME_GOODS_CATEGORY,What kind of goods did the client apply for in the previous application,,object,28.0,0.0,
+200,previous_application.csv,NAME_PORTFOLIO,"Was the previous application for CASH, POS, CAR, �",,object,5.0,0.0,
+201,previous_application.csv,NAME_PRODUCT_TYPE,Was the previous application x-sell o walk-in,,object,3.0,0.0,
+202,previous_application.csv,CHANNEL_TYPE,Through which channel we acquired the client on the previous application,,object,8.0,0.0,
+203,previous_application.csv,SELLERPLACE_AREA,Selling area of seller place of the previous application,,int64,2097.0,0.0,0.5053014389036079
+204,previous_application.csv,NAME_SELLER_INDUSTRY,The industry of the seller,,object,11.0,0.0,
+205,previous_application.csv,CNT_PAYMENT,Term of previous credit at application of the previous application,,float64,50.0,22.286365699245724,0.5264174836727913
+206,previous_application.csv,NAME_YIELD_GROUP,Grouped interest rate into small medium and high of the previous application,grouped,object,5.0,0.0,
+207,previous_application.csv,PRODUCT_COMBINATION,Detailed product combination of the previous application,,object,18.0,0.02071590826085759,
+208,previous_application.csv,DAYS_FIRST_DRAWING,Relative to application date of current application when was the first disbursement of the previous application,time only relative to the application,float64,2839.0,40.298129461254675,0.5
+209,previous_application.csv,DAYS_FIRST_DUE,Relative to application date of current application when was the first due supposed to be of the previous application,time only relative to the application,float64,2893.0,40.298129461254675,0.5018118549991725
+210,previous_application.csv,DAYS_LAST_DUE_1ST_VERSION,Relative to application date of current application when was the first due of the previous application,time only relative to the application,float64,4606.0,40.298129461254675,0.5035473857709911
+211,previous_application.csv,DAYS_LAST_DUE,Relative to application date of current application when was the last due date of the previous application,time only relative to the application,float64,2874.0,40.298129461254675,0.5016771689623719
+212,previous_application.csv,DAYS_TERMINATION,Relative to application date of current application when was the expected termination of the previous application,time only relative to the application,float64,2831.0,40.298129461254675,0.5012490179179516
+213,previous_application.csv,NFLAG_INSURED_ON_APPROVAL,Did the client requested insurance during the previous application,,float64,3.0,40.298129461254675,0.50247029746633
+214,installments_payments.csv,SK_ID_PREV,"ID of previous credit in Home credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loans in Home Credit)",hashed,int64,997752.0,0.0,0.502869
+215,installments_payments.csv,SK_ID_CURR,ID of loan in our sample,hashed,int64,339587.0,0.0,0.502509
+216,installments_payments.csv,NUM_INSTALMENT_VERSION,Version of installment calendar (0 is for credit card) of previous credit. Change of installment version from month to month signifies that some parameter of payment calendar has changed,,float64,65.0,0.0,0.503099
+217,installments_payments.csv,NUM_INSTALMENT_NUMBER,On which installment we observe payment,,int64,277.0,0.0,0.502486
+218,installments_payments.csv,DAYS_INSTALMENT,When the installment of previous credit was supposed to be paid (relative to application date of current loan),time only relative to the application,float64,2922.0,0.0,0.524285
+219,installments_payments.csv,DAYS_ENTRY_PAYMENT,When was the installments of previous credit paid actually (relative to application date of current loan),time only relative to the application,float64,3040.0,0.02135181462126695,0.508776
+220,installments_payments.csv,AMT_INSTALMENT,What was the prescribed installment amount of previous credit on this installment,,float64,902539.0,0.0,0.49955200000000005
+221,installments_payments.csv,AMT_PAYMENT,What the client actually paid on previous credit on this installment,,float64,944236.0,0.02135181462126695,0.498567

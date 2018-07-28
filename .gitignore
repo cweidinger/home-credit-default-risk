@@ -4,5 +4,14 @@
 *.txt
 *.org
 .ipynb_checkpoints
+.idea
 
+venv/
+
+input/
+input-zip/
 other/
+meta/
+submissions/
+__pycache__/
+library/
